@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+:root {
+  font-family:
+    Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #16303d;
+  background-color: #f7faf9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 650ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 650ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scroll-reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.leaflet-container {
+  position: relative;
+  z-index: 0;
+  isolation: isolate;
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+  background: #dce9e6;
+}
+
+.leaflet-control-zoom a {
+  color: #0f172a;
+}
+
+.leaflet-popup-content-wrapper {
+  overflow: hidden;
+  padding: 0;
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgb(15 23 42 / 20%);
+}
+
+.leaflet-popup-content {
+  margin: 0;
+  width: 280px !important;
+  max-width: calc(100vw - 64px);
+}
+
+.leaflet-container a.daytrace-popup-link,
+.leaflet-container a.daytrace-popup-link:hover {
+  color: #ffffff;
+}
+
+.leaflet-container a.daytrace-popup-link {
+  background-color: #0f766e;
+}
+
+.leaflet-container a.daytrace-popup-link:hover {
+  background-color: #0d9488;
+}
+
+.leaflet-popup-close-button {
+  z-index: 30;
+  top: 8px !important;
+  right: 8px !important;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 999px !important;
+  background: rgb(15 23 42 / 78%) !important;
+  color: #ffffff !important;
+  font-size: 20px !important;
+  line-height: 28px !important;
+  backdrop-filter: blur(8px);
+}
+
+.leaflet-popup-tip {
+  box-shadow: 4px 4px 10px rgb(15 23 42 / 10%);
+}
+
+.daytrace-marker-wrapper {
+  border: 0;
+  background: transparent;
+}
+
+.daytrace-marker {
+  position: relative;
+  display: block;
+  width: 38px;
+  height: 38px;
+  transform: rotate(-45deg);
+  border: 3px solid white;
+  border-radius: 50% 50% 50% 0;
+  background: #0f766e;
+  box-shadow: 0 8px 20px rgb(15 23 42 / 35%);
+  transition:
+    background-color 200ms ease,
+    scale 200ms ease;
+}
+
+.daytrace-marker::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  content: "";
+  transform: translate(-50%, -50%);
+  border-radius: 999px;
+  background: white;
+}
+
+.daytrace-marker-selected {
+  scale: 1.15;
+  background: #f59e0b;
+}
