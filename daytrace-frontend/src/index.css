@@ -78,6 +78,10 @@ select {
   max-width: calc(100vw - 64px);
 }
 
+.daytrace-place-popup .leaflet-popup-content {
+  width: 250px !important;
+}
+
 .leaflet-container a.daytrace-popup-link,
 .leaflet-container a.daytrace-popup-link:hover {
   color: #ffffff;

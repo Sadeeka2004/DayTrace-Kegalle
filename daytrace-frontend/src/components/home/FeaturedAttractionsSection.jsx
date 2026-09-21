@@ -6,7 +6,13 @@ import { normalizeAttractions } from "../../utils/normalizeAttraction";
 import PlaceCard from "../places/PlaceCard";
 import PlaceCardSkeleton from "../places/PlaceCardSkeleton";
 
-const FEATURED_PLACE_LIMIT = 3;
+const FEATURED_PLACE_NAMES = [
+  "Bathalegala (Bible Rock)",
+  "Meeyan Ella Waterfall",
+  "Millennium Elephant Foundation",
+];
+
+const FEATURED_PLACE_LIMIT = FEATURED_PLACE_NAMES.length;
 
 function FeaturedAttractionsSection() {
   const [attractions, setAttractions] = useState([]);
@@ -29,9 +35,16 @@ function FeaturedAttractionsSection() {
             response.attractions,
           );
 
-          setAttractions(
-            normalizedAttractions.slice(0, FEATURED_PLACE_LIMIT),
-          );
+         const featuredAttractions = FEATURED_PLACE_NAMES
+  .map((placeName) =>
+    normalizedAttractions.find(
+      (attraction) => attraction.name === placeName,
+    ),
+  )
+  .filter(Boolean);
+
+setAttractions(featuredAttractions);
+
         }
       } catch (error) {
         if (requestIsActive) {

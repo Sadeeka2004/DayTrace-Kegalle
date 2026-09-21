@@ -1,6 +1,6 @@
 export const PROJECT_REFERENCE_POINT = {
-  latitude: 7.1745,
-  longitude: 80.4509,
+  latitude: 7.1721806,
+  longitude: 80.4526413,
 };
 
 const EARTH_RADIUS_KM = 6371;

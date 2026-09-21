@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import {
   AlertTriangle,
+  Clock3,
   Compass,
   ExternalLink,
   Layers3,
@@ -8,6 +9,7 @@ import {
   MapPin,
   Navigation,
   RefreshCw,
+  Route as RouteIcon,
   RotateCcw,
   Search,
   TriangleAlert,
@@ -16,11 +18,20 @@ import { Link, useSearchParams } from "react-router";
 import AttractionMap from "../components/map/AttractionMap";
 import SafeImage from "../components/common/SafeImage";
 import { getAttractions } from "../services/api";
+import { getDrivingRoute } from "../services/routeService";
 import { normalizeAttractions } from "../utils/normalizeAttraction";
 import mapHeroImage from "../assets/images/place-waterfall-placeholder.png";
 
+const WILPOLA_REFERENCE_LOCATION = {
+  id: "wilpola-reference",
+  name: "Wilpola, Aranayake",
+  latitude: 7.1721806,
+  longitude: 80.4526413,
+};
+
 function MapPage() {
   const [searchParams, setSearchParams] = useSearchParams();
+  const requestedAttractionId = searchParams.get("place");
 
   const [attractions, setAttractions] = useState([]);
   const [locationSearch, setLocationSearch] = useState("");
@@ -29,8 +40,15 @@ function MapPage() {
   const [retryCount, setRetryCount] = useState(0);
   const [mapResourceError, setMapResourceError] = useState("");
   const [mapRetryCount, setMapRetryCount] = useState(0);
-
-  const requestedAttractionId = searchParams.get("place");
+  const [routeStartId, setRouteStartId] = useState(
+    WILPOLA_REFERENCE_LOCATION.id,
+  );
+  const [routeDestinationId, setRouteDestinationId] = useState(
+    () => requestedAttractionId || "",
+  );
+  const [routeData, setRouteData] = useState(null);
+  const [isRouteLoading, setIsRouteLoading] = useState(false);
+  const [routeError, setRouteError] = useState("");
 
   useEffect(() => {
     let requestIsActive = true;
@@ -111,14 +129,92 @@ function MapPage() {
   const selectedPlaceHasNoCoordinates =
     requestedAttraction && !selectedAttraction;
 
+  const routeLocations = useMemo(
+    () => [
+      WILPOLA_REFERENCE_LOCATION,
+      ...attractionsWithCoordinates,
+    ],
+    [attractionsWithCoordinates],
+  );
+
   const selectAttraction = (attractionId) => {
+    setRouteDestinationId(attractionId);
+    setRouteData(null);
+    setRouteError("");
     setSearchParams({ place: attractionId });
+  };
+
+  const clearRoute = () => {
+    setRouteData(null);
+    setRouteError("");
+  };
+
+  const updateRouteStart = (locationId) => {
+    setRouteStartId(locationId);
+    clearRoute();
+  };
+
+  const updateRouteDestination = (locationId) => {
+    setRouteDestinationId(locationId);
+    clearRoute();
+
+    const destinationAttraction = attractionsWithCoordinates.find(
+      (attraction) => attraction.id === locationId,
+    );
+
+    if (destinationAttraction) {
+      setSearchParams({ place: destinationAttraction.id });
+    }
+  };
+
+  const showRoute = async () => {
+    const startLocation = routeLocations.find(
+      (location) => location.id === routeStartId,
+    );
+    const destinationLocation = routeLocations.find(
+      (location) => location.id === routeDestinationId,
+    );
+
+    if (!startLocation || !destinationLocation) {
+      setRouteError("Select both a start point and destination.");
+      return;
+    }
+
+    if (startLocation.id === destinationLocation.id) {
+      setRouteError("Start point and destination must be different.");
+      return;
+    }
+
+    try {
+      setIsRouteLoading(true);
+      setRouteError("");
+      setRouteData(null);
+
+      const calculatedRoute = await getDrivingRoute([
+        startLocation,
+        destinationLocation,
+      ]);
+
+      setRouteData({
+        ...calculatedRoute,
+        startName: startLocation.name,
+        destinationName: destinationLocation.name,
+      });
+    } catch (error) {
+      setRouteError(error.message);
+    } finally {
+      setIsRouteLoading(false);
+    }
   };
 
   const resetMapView = () => {
     setSearchParams({});
     setLocationSearch("");
     setMapResourceError("");
+    setRouteStartId(WILPOLA_REFERENCE_LOCATION.id);
+    setRouteDestinationId("");
+    setRouteData(null);
+    setRouteError("");
     setMapRetryCount((count) => count + 1);
   };
 
@@ -376,6 +472,163 @@ function MapPage() {
                 </div>
               </div>
 
+              <section className="mb-6 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+                <div className="border-b border-slate-200 bg-gradient-to-r from-slate-950 to-teal-950 p-6 text-white">
+                  <div className="flex items-start gap-4">
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-amber-400 text-slate-950 shadow-lg">
+                      <RouteIcon size={24} aria-hidden="true" />
+                    </span>
+
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-[0.2em] text-teal-300">
+                        Optional planning tool
+                      </p>
+                      <h2 className="mt-2 text-2xl font-bold">
+                        Approximate route preview
+                      </h2>
+                      <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-300">
+                        Select two locations to preview an approximate driving
+                        route, distance and travel time.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-5 sm:p-6">
+                  <div className="grid gap-4 lg:grid-cols-[1fr_1fr_auto] lg:items-end">
+                    <label className="block">
+                      <span className="mb-2 block text-sm font-bold text-slate-700">
+                        Start point
+                      </span>
+                      <select
+                        value={routeStartId}
+                        onChange={(event) =>
+                          updateRouteStart(event.target.value)
+                        }
+                        className="min-h-12 w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 text-slate-900 outline-none transition focus:border-teal-600 focus:bg-white focus:ring-4 focus:ring-teal-600/10"
+                      >
+                        {routeLocations.map((location) => (
+                          <option key={location.id} value={location.id}>
+                            {location.name}
+                          </option>
+                        ))}
+                      </select>
+                    </label>
+
+                    <label className="block">
+                      <span className="mb-2 block text-sm font-bold text-slate-700">
+                        Destination
+                      </span>
+                      <select
+                        value={routeDestinationId}
+                        onChange={(event) =>
+                          updateRouteDestination(event.target.value)
+                        }
+                        className="min-h-12 w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 text-slate-900 outline-none transition focus:border-teal-600 focus:bg-white focus:ring-4 focus:ring-teal-600/10"
+                      >
+                        <option value="">Select destination</option>
+                        {routeLocations.map((location) => (
+                          <option
+                            key={location.id}
+                            value={location.id}
+                            disabled={location.id === routeStartId}
+                          >
+                            {location.name}
+                          </option>
+                        ))}
+                      </select>
+                    </label>
+
+                    <div className="flex flex-wrap gap-2">
+                      <button
+                        type="button"
+                        onClick={showRoute}
+                        disabled={
+                          isRouteLoading || !routeDestinationId
+                        }
+                        className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-2xl bg-amber-400 px-6 font-bold text-slate-950 transition hover:bg-amber-300 disabled:cursor-not-allowed disabled:opacity-50 lg:flex-none"
+                      >
+                        {isRouteLoading ? (
+                          <>
+                            <LoaderCircle
+                              size={19}
+                              className="animate-spin"
+                              aria-hidden="true"
+                            />
+                            Calculating...
+                          </>
+                        ) : (
+                          <>
+                            <RouteIcon size={19} aria-hidden="true" />
+                            Show route
+                          </>
+                        )}
+                      </button>
+
+                      {routeData && (
+                        <button
+                          type="button"
+                          onClick={clearRoute}
+                          className="min-h-12 rounded-2xl border border-slate-300 px-5 font-semibold text-slate-700 transition hover:border-rose-300 hover:bg-rose-50 hover:text-rose-700"
+                        >
+                          Clear
+                        </button>
+                      )}
+                    </div>
+                  </div>
+
+                  {routeError && (
+                    <div
+                      role="alert"
+                      className="mt-5 flex items-start gap-3 rounded-2xl border border-rose-200 bg-rose-50 p-4 text-rose-800"
+                    >
+                      <AlertTriangle
+                        size={20}
+                        className="mt-0.5 shrink-0"
+                        aria-hidden="true"
+                      />
+                      <p className="text-sm font-medium">{routeError}</p>
+                    </div>
+                  )}
+
+                  {routeData && (
+                    <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-[1fr_180px_180px]">
+                      <div className="rounded-2xl bg-slate-100 p-4">
+                        <p className="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">
+                          Route
+                        </p>
+                        <p className="mt-2 font-bold text-slate-950">
+                          {routeData.startName} → {routeData.destinationName}
+                        </p>
+                      </div>
+
+                      <div className="rounded-2xl bg-teal-50 p-4 text-teal-900">
+                        <p className="flex items-center gap-2 text-sm font-semibold">
+                          <RouteIcon size={17} aria-hidden="true" />
+                          Distance
+                        </p>
+                        <p className="mt-2 text-2xl font-bold">
+                          {routeData.distanceKm.toFixed(1)} km
+                        </p>
+                      </div>
+
+                      <div className="rounded-2xl bg-amber-50 p-4 text-amber-900">
+                        <p className="flex items-center gap-2 text-sm font-semibold">
+                          <Clock3 size={17} aria-hidden="true" />
+                          Travel time
+                        </p>
+                        <p className="mt-2 text-2xl font-bold">
+                          {Math.max(
+                            1,
+                            Math.round(routeData.durationMinutes),
+                          )} min
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </section>
+
               <div className="grid gap-6 lg:grid-cols-[360px_1fr]">
                 <aside className="flex max-h-[620px] flex-col rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
                   <div className="mb-5">
@@ -509,6 +762,9 @@ function MapPage() {
                     selectedAttraction={selectedAttraction}
                     onAttractionSelect={selectAttraction}
                     onMapError={setMapResourceError}
+                    routeCoordinates={
+                      routeData?.coordinates || []
+                    }
                   />
                 </div>
               </div>

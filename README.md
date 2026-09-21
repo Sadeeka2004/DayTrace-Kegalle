@@ -32,24 +32,33 @@ The system focuses on information discovery and day-visit planning. It does **no
 ### 👤 Tourist / User Features
 
 * Browse local tourist attractions
-* Search for attractions
+* Search attractions by name, category, or location
 * Filter attractions by category
-* View detailed attraction information
-* View opening times and useful travel information
-* View attraction locations on an interactive map
-* Explore attraction locations using Leaflet and OpenStreetMap
-* Select attractions for a one-day visit
-* Create and manage a simple one-day travel plan
-* Save favourite attractions where supported by the application
+* View detailed destination information
+* View opening times, facilities, travel information, and travel tips
+* View multiple attraction images using a responsive gallery
+* Mark and filter favourite attractions in the current browser
+* View attraction locations using Leaflet and OpenStreetMap
+* Open attraction information from interactive map markers
+* Preview an approximate driving route between selected locations
+* View approximate route distance and estimated travel time
+* Add multiple attractions to a one-day visit plan
+* Reorder and remove attractions from the current day plan
+* Clear and review the complete one-day visit plan
 
 ### 🔐 Administrator Features
 
-* Administrator authentication
-* Add new attractions
+* Secure administrator authentication
+* Protected administrator routes and operations
+* Add new tourist attractions
 * Edit existing attraction information
-* Delete attractions
-* Manage attraction images
-* Manage application branding where supported
+* Delete attractions with confirmation
+* Upload and manage multiple attraction images
+* Select a primary attraction image
+* Prevent duplicate image selection
+* Search and filter attraction records
+* View attraction, category, map, and image statistics
+* Upload, link, change, or restore the website logo
 
 ---
 
@@ -101,10 +110,12 @@ The final application may contain additional attractions as the project develops
 * MongoDB Atlas
 * Mongoose ODM
 
-### Maps
+### Maps and Route Preview
 
 * Leaflet
+* React Leaflet
 * OpenStreetMap
+* OSRM public routing service
 
 ### Development Tools
 
@@ -261,7 +272,7 @@ Recommended development environment:
 ## 1. Clone the repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/Sadeeka2004/DayTrace-Kegalle.git
 ```
 
 Move into the project directory:
@@ -346,7 +357,9 @@ Create a `.env` file based on `.env.example`.
 
 ```env
 VITE_API_URL=http://localhost:5000/api
+VITE_OSRM_BASE_URL=https://router.project-osrm.org
 ```
+`VITE_OSRM_BASE_URL` configures the routing service used for approximate route previews. The public OSRM demonstration service is used during development.
 
 ---
 
@@ -400,16 +413,23 @@ Authentication uses JWT-based authentication, while administrator passwords are 
 
 ---
 
-# 🗺️ Maps and Location Data
+# 🗺️ Maps, Locations, and Route Preview
 
-The project uses:
+The project uses **Leaflet** and **OpenStreetMap** to display attraction locations on an interactive map.
 
-* **Leaflet** for interactive maps
-* **OpenStreetMap** for map data
+Users can:
 
-The map functionality allows users to visually explore attraction locations.
+* View available attraction markers
+* Search and select mapped attractions
+* Open attraction details from map markers
+* Select a starting location and destination
+* Display an approximate driving route
+* View estimated route distance and travel time
+* Clear the currently displayed route
 
-OpenStreetMap attribution should remain visible wherever required by the map implementation.
+Approximate routes are requested from the OSRM public routing service. DayTrace Kegalle does not provide live traffic information, automatic route optimization, turn-by-turn navigation, or transport booking.
+
+OpenStreetMap attribution remains visible on the map.
 
 ---
 
@@ -428,6 +448,11 @@ OpenStreetMap attribution should remain visible wherever required by the map imp
 * Administrator authentication
 * Attraction management
 * Attraction image management
+* Multiple attraction image management
+* Browser-based favourites
+* Approximate route preview
+* Website branding management
+* Responsive public and administrator interfaces
 
 ### Not Included
 
@@ -460,11 +485,13 @@ The system was developed through requirements analysis, stakeholder consultation
 
 # 📈 Project Status
 
-The project is currently under active development.
+The main implementation of DayTrace Kegalle is complete.
 
-The main application structure and core functionality have been implemented. Further improvements, testing, content verification, UI refinement, and additional enhancements may be introduced during the remaining development stages.
+The completed system includes attraction discovery, search and filtering, attraction details, multiple image galleries, favourites, interactive maps, approximate route previews, one-day visit planning, administrator authentication, attraction management, image management, and website branding management.
 
-Future changes will be committed to the repository progressively so that the development history remains traceable.
+The project satisfies the core requirements defined in the Final Software Requirements Specification while including selected UI/UX and usability enhancements that do not change the original project scope.
+
+Final testing, data verification, documentation, and deployment preparation may continue before academic submission.
 
 ---
 
