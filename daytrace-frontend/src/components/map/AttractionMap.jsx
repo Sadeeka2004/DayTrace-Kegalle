@@ -52,12 +52,12 @@ function MapController({
       return;
     }
 
-    map.flyTo(
+        map.flyTo(
       [
         selectedAttraction.latitude,
         selectedAttraction.longitude,
       ],
-      14,
+      Math.max(map.getZoom(), 14),
       {
         duration: 1.2,
       },
@@ -178,12 +178,9 @@ function AttractionMap({
                 onAttractionSelect(attraction.id),
             }}
           >
-            <Popup
+                        <Popup
               className="daytrace-place-popup"
-              autoPan
-              keepInView
-              autoPanPaddingTopLeft={[24, 110]}
-              autoPanPaddingBottomRight={[24, 24]}
+              autoPan={false}
             >
               <article className="w-[250px] overflow-hidden bg-white">
                 <div className="relative h-28 overflow-hidden bg-slate-200">
