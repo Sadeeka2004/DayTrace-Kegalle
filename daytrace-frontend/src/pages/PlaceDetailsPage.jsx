@@ -141,6 +141,7 @@ function PlaceDetailsPage() {
 
   const hasOpeningHours =
     attraction.openingTime && attraction.closingTime;
+  const isOpen24Hours = attraction.isOpen24Hours;
   const hasFacilities = attraction.facilities.length > 0;
   const hasTravelTips = attraction.travelTips.length > 0;
   const hasDistance = attraction.distanceKm !== null;
@@ -200,7 +201,18 @@ function PlaceDetailsPage() {
                   Opening hours
                 </h2>
 
-                {hasOpeningHours ? (
+                {isOpen24Hours ? (
+                  <>
+                    <p className="mt-3 text-slate-600">
+                      Open 24 hours
+                    </p>
+                    {attraction.openingNote && (
+                      <p className="mt-2 text-sm text-slate-500">
+                        {attraction.openingNote}
+                      </p>
+                    )}
+                  </>
+                ) : hasOpeningHours ? (
                   <>
                     <p className="mt-3 text-slate-600">
                       {attraction.openingTime} – {attraction.closingTime}

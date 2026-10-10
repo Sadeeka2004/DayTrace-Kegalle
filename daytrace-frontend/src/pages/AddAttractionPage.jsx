@@ -36,6 +36,7 @@ const initialFormData = {
   longitude: "",
   openingTime: "",
   closingTime: "",
+  isOpen24Hours: false,
   openingNote: "",
   distanceFromReferenceKm: "",
   travelInformation: "",
@@ -101,11 +102,11 @@ const replaceSelectedImages = (files) => {
 };
 
   const handleChange = (event) => {
-    const { name, value } = event.target;
+    const { name, value, type, checked } = event.target;
 
     setFormData((currentData) => ({
       ...currentData,
-      [name]: value,
+      [name]: type === "checkbox" ? checked : value,
     }));
   };
 
@@ -247,8 +248,9 @@ const replaceSelectedImages = (files) => {
       },
 
       openingHours: {
-        openingTime: formData.openingTime,
-        closingTime: formData.closingTime,
+        openingTime: formData.isOpen24Hours ? "" : formData.openingTime,
+        closingTime: formData.isOpen24Hours ? "" : formData.closingTime,
+        isOpen24Hours: formData.isOpen24Hours,
         note: formData.openingNote.trim(),
       },
 
@@ -507,6 +509,19 @@ const replaceSelectedImages = (files) => {
             </h3>
 
             <div className="mt-6 grid gap-6 sm:grid-cols-2">
+                            <label className="flex items-center gap-3 sm:col-span-2">
+                <input
+                  name="isOpen24Hours"
+                  type="checkbox"
+                  checked={formData.isOpen24Hours}
+                  onChange={handleChange}
+                  className="h-5 w-5 rounded border-slate-300 accent-teal-800"
+                />
+                <span className="text-sm font-semibold text-slate-700">
+                  Open 24 hours (no fixed opening or closing time)
+                </span>
+              </label>
+
               <label>
                 <span className="text-sm font-semibold text-slate-700">
                   Opening time
@@ -516,7 +531,8 @@ const replaceSelectedImages = (files) => {
                   type="time"
                   value={formData.openingTime}
                   onChange={handleChange}
-                  className={inputClassName}
+                  disabled={formData.isOpen24Hours}
+                  className={`${inputClassName} disabled:cursor-not-allowed disabled:opacity-50`}
                 />
               </label>
 
@@ -529,7 +545,8 @@ const replaceSelectedImages = (files) => {
                   type="time"
                   value={formData.closingTime}
                   onChange={handleChange}
-                  className={inputClassName}
+                  disabled={formData.isOpen24Hours}
+                  className={`${inputClassName} disabled:cursor-not-allowed disabled:opacity-50`}
                 />
               </label>
 

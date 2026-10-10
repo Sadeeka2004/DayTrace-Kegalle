@@ -94,6 +94,10 @@ const attractionSchema = new mongoose.Schema(
         trim: true,
         default: "",
       },
+      isOpen24Hours: {
+        type: Boolean,
+        default: false,
+      },
       note: {
         type: String,
         trim: true,

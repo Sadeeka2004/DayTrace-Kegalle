@@ -6,7 +6,7 @@ const getBrandingDocument = async () => {
     { settingKey: "main-branding" },
     { $setOnInsert: { settingKey: "main-branding" } },
     {
-      new: true,
+      returnDocument: "after",
       upsert: true,
       setDefaultsOnInsert: true,
     },

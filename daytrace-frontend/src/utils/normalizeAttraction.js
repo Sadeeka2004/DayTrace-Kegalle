@@ -49,6 +49,7 @@ export const normalizeAttraction = (attraction) => {
     description: attraction.description || "",
     openingTime: attraction.openingHours?.openingTime || null,
     closingTime: attraction.openingHours?.closingTime || null,
+    isOpen24Hours: Boolean(attraction.openingHours?.isOpen24Hours),
     openingNote: attraction.openingHours?.note || "",
     facilities: attraction.facilities || [],
     travelTips: attraction.travelTips || [],
