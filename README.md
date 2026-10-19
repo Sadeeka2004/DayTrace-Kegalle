@@ -315,6 +315,17 @@ ADMIN_PASSWORD=your_secure_admin_password
 
 The `.env.example` file is provided as a template.
 
+
+### Create or Update the Administrator
+
+After configuring the backend `.env` file, run:
+
+```bash
+npm run admin:setup
+```
+
+This command creates the predefined administrator. If the username already exists, it securely updates the administrator password using the `ADMIN_USERNAME` and `ADMIN_PASSWORD` values configured in the backend `.env` file.
+
 ---
 
 ## 3. Start the Backend
