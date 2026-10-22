@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "admin:setup": "node scripts/createAdmin.js"
+    "admin:setup": "node scripts/createAdmin.js",
+    "db:export": "node scripts/exportData.js"
   },
   "keywords": [],
   "author": "",

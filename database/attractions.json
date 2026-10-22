@@ -1,0 +1,656 @@
+[
+  {
+    "_id": "6a9cbec1b719e667e73eac67",
+    "name": "Meeyan Ella Waterfall",
+    "category": "Nature",
+    "description": "Meeyan Ella is a scenic waterfall located near Ihalakotte Railway Station in the Kegalle District. The waterfall is connected with the surrounding Alagalla mountain landscape and has historical importance because of modifications made during the construction of the Colombo–Kandy railway line. Its rocky setting, flowing water and surrounding greenery make it attractive to nature lovers and photographers.",
+    "location": {
+      "name": "Ihalakotte, Kegalle District",
+      "address": "Near Ihalakotte Railway Station, Ihalakotte, Kegalle District, Sri Lanka",
+      "latitude": 7.2904722,
+      "longitude": 80.4638611
+    },
+    "openingHours": {
+      "openingTime": "",
+      "closingTime": "",
+      "note": "No official opening hours are currently available. Access conditions should be verified locally before visiting."
+    },
+    "distanceFromReferenceKm": 20,
+    "travelInformation": "Meeyan Ella is located close to Ihalakotte Railway Station. Visitors should use a safe and legally permitted access route and obtain current local guidance before approaching the waterfall. Railway tracks and tunnels are operational transport areas and must not be used as walking paths without official permission.",
+    "travelTips": [
+      "Check weather and water conditions before visiting.",
+      "Use a safe and legally permitted access route.",
+      "Never walk through an active railway tunnel.",
+      "Do not stand or walk on operational railway tracks.",
+      "Obtain local or railway-authority guidance where required.",
+      "Wear footwear suitable for wet and uneven surfaces.",
+      "Avoid the area during heavy rain or strong water flow.",
+      "Do not enter deep water or climb slippery rocks.",
+      "Carry drinking water and take all waste away."
+    ],
+    "facilities": [],
+    "images": [
+      {
+        "url": "http://localhost:5000/uploads/attractions/1788657345854-cbe004f6-92bd-42e3-b2a1-cef96d7f03ed.jpg",
+        "altText": "Waterfall photo 1",
+        "isPrimary": true,
+        "_id": "6a9cbec1b719e667e73eac68"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1788657345859-67c32e1a-36c5-4c0d-9cdc-d884ce08dd32.jpg",
+        "altText": "Waterfall photo 2",
+        "isPrimary": false,
+        "_id": "6a9cbec1b719e667e73eac69"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789973741313-dd1243ee-3623-42a7-9405-8f47192cf73d.jpg",
+        "altText": "Meeyan Ella Waterfall photo 3",
+        "isPrimary": false,
+        "_id": "6ab0d4ed896ad5dac6542fab"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789973741316-e6e0711c-6eb8-468e-84eb-03732f87ce8e.jpg",
+        "altText": "Meeyan Ella Waterfall photo 4",
+        "isPrimary": false,
+        "_id": "6ab0d4ed896ad5dac6542fac"
+      }
+    ],
+    "createdAt": "2026-09-06T01:15:45.978Z",
+    "updatedAt": "2026-09-21T06:55:41.671Z",
+    "__v": 3
+  },
+  {
+    "_id": "6a9d7c02d68d64f4d2625b9f",
+    "name": "Ambuluwawa Biodiversity Complex",
+    "category": "Nature",
+    "description": "Ambuluwawa Biodiversity Complex is a mountain-top biodiversity and multi-religious attraction near Gampola. It is best known for its distinctive white spiral tower, landscaped surroundings and panoramic views across the central highlands. The complex combines natural scenery, cultural diversity, religious harmony and an adventurous tower-climbing experience.",
+    "location": {
+      "name": "Ambuluwawa, Gampola",
+      "address": "Ambuluwawa Biodiversity Complex, Ambuluwawa ICC Road, Gampola 20500, Sri Lanka",
+      "latitude": 7.1620462,
+      "longitude": 80.54731
+    },
+    "openingHours": {
+      "openingTime": "07:30",
+      "closingTime": "17:30",
+      "note": "The attraction is normally open throughout the year. Opening times and access conditions may change, so verify current information before travelling."
+    },
+    "distanceFromReferenceKm": 18,
+    "travelInformation": "Visitors using public transport can first travel to Gampola. From Gampola town, the Ambuluwawa entrance can be reached by tuk-tuk or another local transport option. The journey from Gampola to the entrance is approximately 5.6 km. The route continues uphill towards the biodiversity complex.",
+    "travelTips": [
+      "Wear comfortable shoes suitable for climbing and uneven paths.",
+      "Visit early when possible to avoid large crowds.",
+      "The tower staircase becomes narrow near the top.",
+      "Avoid climbing during heavy rain or unsafe weather.",
+      "Carry drinking water and protect yourself from the sun.",
+      "Visitors with mobility difficulties should carefully consider the steep climb.",
+      "Verify current ticket prices and access conditions before travelling."
+    ],
+    "facilities": [
+      "Cafe",
+      "Restaurant",
+      "Souvenir shop",
+      "Adventure park",
+      "Viewing areas"
+    ],
+    "images": [
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789973396041-1ff57cd7-18fd-42d9-9441-211decbd2d74.jpg",
+        "altText": "Ambuluwawa Biodiversity Complex photo 6",
+        "isPrimary": false,
+        "_id": "6ab0d394896ad5dac6542dff"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789977290915-f026eab8-34f8-4434-bd81-953f6faeaaa3.jpg",
+        "altText": "Ambuluwawa Biodiversity Complex photo 3",
+        "isPrimary": false,
+        "_id": "6ab0e2cb896ad5dac654346e"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789977290917-3c7064da-f8ca-4683-b404-783648f827c0.jpg",
+        "altText": "Ambuluwawa Biodiversity Complex photo 4",
+        "isPrimary": false,
+        "_id": "6ab0e2cb896ad5dac654346f"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789977290927-e21e75dc-de95-4c44-ab7d-8725eff59ace.jpg",
+        "altText": "Ambuluwawa Biodiversity Complex photo 5",
+        "isPrimary": false,
+        "_id": "6ab0e2cb896ad5dac6543470"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789977290933-0c439206-a21c-4358-b628-76d19289b452.jpg",
+        "altText": "Ambuluwawa Biodiversity Complex photo 6",
+        "isPrimary": true,
+        "_id": "6ab0e2cb896ad5dac6543471"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789977290942-cddf1bd6-e2a7-44f1-ac86-646bb5ed03b3.jpg",
+        "altText": "Ambuluwawa Biodiversity Complex photo 7",
+        "isPrimary": false,
+        "_id": "6ab0e2cb896ad5dac6543472"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789977290956-ec12f0e7-492a-402a-af93-35646d5f1fd1.jpg",
+        "altText": "Ambuluwawa Biodiversity Complex photo 8",
+        "isPrimary": false,
+        "_id": "6ab0e2cb896ad5dac6543473"
+      }
+    ],
+    "createdAt": "2026-09-06T14:43:14.716Z",
+    "updatedAt": "2026-09-29T14:05:34.625Z",
+    "__v": 7
+  },
+  {
+    "_id": "6a9d96c4f27d028dfafb1ae5",
+    "name": "Saradiyel Village",
+    "category": "Cultural",
+    "description": "Saradiyel Village is a cultural and educational attraction located at the foothills of Uthuwankanda near Mawanella. The village uses life-sized figures, structures and exhibits to present important events from the life of Sura Saradiyel and the social conditions of colonial-era Sri Lanka. It provides visitors with an engaging way to learn about regional history, culture and folklore.",
+    "location": {
+      "name": "Uthuwankanda, Mawanella",
+      "address": "Saradiyel Village, Uthuwankanda, Mawanella, Kegalle District, Sri Lanka",
+      "latitude": 7.259907,
+      "longitude": 80.4225609
+    },
+    "openingHours": {
+      "openingTime": "",
+      "closingTime": "",
+      "note": "Official opening hours are not currently verified. Contact the attraction before visiting."
+    },
+    "distanceFromReferenceKm": 14,
+    "travelInformation": "Saradiyel Village is located at Uthuwankanda near Mawanella and can be approached from the Colombo–Kandy road. Visitors should confirm the current entrance route, opening status and any applicable visitor charges before travelling.",
+    "travelTips": [
+      "Contact the attraction before travelling.",
+      "Wear comfortable footwear for walking around the village.",
+      "Allow sufficient time to view the cultural exhibits.",
+      "Children should remain with supervising adults.",
+      "Respect the exhibits and follow staff instructions.",
+      "Check current weather conditions before travelling."
+    ],
+    "facilities": [],
+    "images": [
+      {
+        "url": "http://localhost:5000/uploads/attractions/1788712644804-12afb143-34a9-420e-8fab-2538f83e7630.jpg",
+        "altText": "",
+        "isPrimary": true,
+        "_id": "6a9d96c4f27d028dfafb1ae6"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1788712644814-850dbe3d-dc37-47c2-a115-2f2eff77f89f.jpg",
+        "altText": "",
+        "isPrimary": false,
+        "_id": "6a9d96c4f27d028dfafb1ae7"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1788712644825-395d3c7a-1c4e-49d5-90f7-961830d93cdb.jpg",
+        "altText": "",
+        "isPrimary": false,
+        "_id": "6a9d96c4f27d028dfafb1ae8"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1788712644828-d325b7a6-a80d-4e18-b4ce-d13e9f122adf.jpg",
+        "altText": "",
+        "isPrimary": false,
+        "_id": "6a9d96c4f27d028dfafb1ae9"
+      }
+    ],
+    "createdAt": "2026-09-06T16:37:24.980Z",
+    "updatedAt": "2026-09-23T02:27:14.450Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a9d97d1f27d028dfafb1b04",
+    "name": "Pinnawala Zoo",
+    "category": "Wildlife",
+    "description": "Pinnawala Zoo is an open-air zoological attraction located in Pinnawala near Rambukkana. The zoo provides opportunities to observe different mammals, birds and reptiles in landscaped enclosures. It also supports wildlife education and public awareness of Sri Lankan and other animal species.",
+    "location": {
+      "name": "Pinnawala, Rambukkana",
+      "address": "Kegalle–Rambukkana Road, Pinnawala, Rambukkana 71100, Sri Lanka",
+      "latitude": 7.30056,
+      "longitude": 80.38833
+    },
+    "openingHours": {
+      "openingTime": "08:30",
+      "closingTime": "17:00",
+      "note": "Open daily according to the official zoo website. Verify current opening times, ticket-counter times and entrance charges before travelling."
+    },
+    "distanceFromReferenceKm": 25,
+    "travelInformation": "The zoo is situated in Pinnawala near Rambukkana and can be reached using the Kegalle–Rambukkana road. Public transport is available towards Rambukkana and Pinnawala, but visitors should confirm their final transport connection before starting the journey.",
+    "travelTips": [
+      "Check current ticket prices before visiting.",
+      "Visit earlier in the day when possible.",
+      "Follow all zoo safety signs and staff instructions.",
+      "Do not feed or touch animals unless specifically permitted.",
+      "Do not cross barriers or disturb the animals.",
+      "Children should remain with supervising adults.",
+      "Carry sun protection and drinking water."
+    ],
+    "facilities": [
+      "Parking",
+      "Visitor walking paths",
+      "Animal viewing areas"
+    ],
+    "images": [
+      {
+        "url": "http://localhost:5000/uploads/attractions/1788712912924-bac4b63a-1c37-4a35-b8ab-306436d78113.jpg",
+        "altText": "Pinnawala Open Zoo photo 1",
+        "isPrimary": false,
+        "_id": "6a9d97d1f27d028dfafb1b06"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1788712912924-18401494-61f4-4782-a4a1-5c619ed9d8ea.jpg",
+        "altText": "Pinnawala Open Zoo photo 2",
+        "isPrimary": false,
+        "_id": "6a9d97d1f27d028dfafb1b07"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1788712912925-b237f9f5-9df2-4c48-b76e-44febabb7bca.jpg",
+        "altText": "Pinnawala Open Zoo photo 3",
+        "isPrimary": false,
+        "_id": "6a9d97d1f27d028dfafb1b08"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789974049842-d2118911-9932-40c2-8086-ab6c88de208a.jpg",
+        "altText": "Pinnawala Open Zoo photo 4",
+        "isPrimary": true,
+        "_id": "6ab0d622896ad5dac6543102"
+      }
+    ],
+    "createdAt": "2026-09-06T16:41:53.138Z",
+    "updatedAt": "2026-09-23T02:27:46.090Z",
+    "__v": 1
+  },
+  {
+    "_id": "6a9d992ef27d028dfafb1b2b",
+    "name": "Sandaraja Wana Arana",
+    "category": "Nature",
+    "description": "Sandaraja Wana Arana is a peaceful forest-based attraction in the Aranayake area. The surrounding natural environment provides a calm setting associated with reflection, meditation and appreciation of forest biodiversity. Its quiet atmosphere and green landscape make it suitable for visitors seeking a respectful nature and religious experience.",
+    "location": {
+      "name": "Dotheloya, Aranayake",
+      "address": "Sandaraja Wana Arana, Dotheloya, Dolosbage, Yatideriya–Uduwa Road, Aranayake, Sri Lanka",
+      "latitude": 7.1152403,
+      "longitude": 80.4087791
+    },
+    "openingHours": {
+      "openingTime": "",
+      "closingTime": "",
+      "note": "Verified public opening hours are currently unavailable. Obtain current local guidance before visiting."
+    },
+    "distanceFromReferenceKm": 18,
+    "travelInformation": "The attraction is located in a forested area around Dotheloya in the Aranayake region. Road and weather conditions may affect access. Visitors should obtain current local directions and confirm whether permission or prior contact is required.",
+    "travelTips": [
+      "Maintain silence and respect the environment.",
+      "Wear modest clothing.",
+      "Do not damage plants or disturb wildlife.",
+      "Avoid visiting alone during unsafe weather.",
+      "Use suitable footwear for forest paths.",
+      "Carry drinking water and basic rain protection.",
+      "Do not leave plastic or other waste behind.",
+      "Obtain local guidance before entering unfamiliar forest paths."
+    ],
+    "facilities": [],
+    "images": [
+      {
+        "url": "http://localhost:5000/uploads/attractions/1788713262009-ea29b06f-5900-4693-abd9-a40bb83dd64a.jpg",
+        "altText": "Sandaraja Wana Arana photo 1",
+        "isPrimary": true,
+        "_id": "6a9d992ef27d028dfafb1b2c"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1788713262012-a5ed3a6b-b6dd-41fa-b760-1cde496b2335.jpg",
+        "altText": "Sandaraja Wana Arana photo 2",
+        "isPrimary": false,
+        "_id": "6a9d992ef27d028dfafb1b2d"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1790132189823-09169acf-f680-4251-abd8-7d2b69602df7.jpg",
+        "altText": "Sandaraja Wana Arana photo 3",
+        "isPrimary": false,
+        "_id": "6ab33fdee45c824978bc709c"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1790132189829-97ac7f4e-c940-4df1-80b6-9bac9b2600d9.jpg",
+        "altText": "Sandaraja Wana Arana photo 4",
+        "isPrimary": false,
+        "_id": "6ab33fdee45c824978bc709d"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1790132189832-977e9b24-cf9e-4c69-94a3-cb39787996d1.jpg",
+        "altText": "Sandaraja Wana Arana photo 5",
+        "isPrimary": false,
+        "_id": "6ab33fdee45c824978bc709e"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1790132189834-701f8a8b-bba2-4742-b4f9-4124142b24f5.jpg",
+        "altText": "Sandaraja Wana Arana photo 6",
+        "isPrimary": false,
+        "_id": "6ab33fdee45c824978bc709f"
+      }
+    ],
+    "createdAt": "2026-09-06T16:47:42.318Z",
+    "updatedAt": "2026-09-23T02:56:30.030Z",
+    "__v": 2
+  },
+  {
+    "_id": "6a9d9a8cf27d028dfafb1b7a",
+    "name": "The Cloud Resort",
+    "category": "Recreational",
+    "description": "The Cloud Resort is a hill-country recreational location situated on Balumgala Road in Kadugannawa. It is known for its peaceful environment, garden setting and views of the surrounding mountains. Within DayTrace Kegalle, it is presented only as a nearby recreational and scenic attraction.",
+    "location": {
+      "name": "Kadugannawa",
+      "address": "207/1 Balumgala Road, Kadugannawa 20300, Sri Lanka",
+      "latitude": 7.25121,
+      "longitude": 80.51954
+    },
+    "openingHours": {
+      "openingTime": "",
+      "closingTime": "",
+      "note": "Confirm current day-visitor access and dining availability directly with the property before travelling."
+    },
+    "distanceFromReferenceKm": 24,
+    "travelInformation": "The property is located on Balumgala Road near Kadugannawa. The final road section may require careful navigation. Visitors who are not staying at the property should contact it first to confirm whether day visits, dining or scenic access are currently available.",
+    "travelTips": [
+      "Contact the property before making a day visit.",
+      "Do not assume that public access is always available.",
+      "Check road and weather conditions before travelling.",
+      "Use the location only for tourism information, not accommodation booking.",
+      "Respect guest areas and property rules.",
+      "Visit during daylight when possible."
+    ],
+    "facilities": [
+      "Parking",
+      "Garden",
+      "Dining facilities"
+    ],
+    "images": [
+      {
+        "url": "http://localhost:5000/uploads/attractions/1788713612607-605fc65b-c54f-4f02-9338-d74f22270a37.jpg",
+        "altText": "The Cloud Resort photo 1",
+        "isPrimary": true,
+        "_id": "6a9d9a8cf27d028dfafb1b7b"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789987078223-2abf0f2b-c24a-49ae-959e-23990c4a78da.jpg",
+        "altText": "The Cloud Resort photo 2",
+        "isPrimary": false,
+        "_id": "6ab1090641d15d9a654b78e7"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789987078236-f851930a-71a4-4ca3-b740-4cdf77c729cb.jpg",
+        "altText": "The Cloud Resort photo 3",
+        "isPrimary": false,
+        "_id": "6ab1090641d15d9a654b78e8"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789987078240-a02aff0f-81c1-40de-a342-ff217e88eced.jpg",
+        "altText": "The Cloud Resort photo 4",
+        "isPrimary": false,
+        "_id": "6ab1090641d15d9a654b78e9"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789987078240-f085a093-1e48-487f-b9cd-0ea3e4b74c2c.jpg",
+        "altText": "The Cloud Resort photo 5",
+        "isPrimary": false,
+        "_id": "6ab1090641d15d9a654b78ea"
+      }
+    ],
+    "createdAt": "2026-09-06T16:53:32.735Z",
+    "updatedAt": "2026-09-21T10:37:58.864Z",
+    "__v": 1
+  },
+  {
+    "_id": "6a9d9b7df27d028dfafb1ba7",
+    "name": "Millennium Elephant Foundation",
+    "category": "Wildlife",
+    "description": "Millennium Elephant Foundation is a Sri Lankan charitable organization located in Randeniya near Kegalle. The foundation focuses on the care and welfare of captive Asian elephants while providing conservation education and supervised visitor experiences. Visitors can learn about elephant care, responsible tourism and the foundation’s conservation work.",
+    "location": {
+      "name": "Randeniya, Hiriwadunna",
+      "address": "Millennium Elephant Foundation, Randeniya, Hiriwadunna, Kegalle, Sri Lanka",
+      "latitude": 7.275,
+      "longitude": 80.38333
+    },
+    "openingHours": {
+      "openingTime": "08:30",
+      "closingTime": "16:30",
+      "note": "Monday to Friday: 8:30 AM–4:30 PM. Saturday and Sunday: 8:00 AM–4:30 PM. Verify current schedules and visitor programmes before travelling."
+    },
+    "distanceFromReferenceKm": 22,
+    "travelInformation": "The foundation is located at Randeniya, Hiriwadunna, near Kegalle. Visitors should contact the foundation or check its official website before travelling because programmes, entrance arrangements and elephant-care activities may change.",
+    "travelTips": [
+      "Check the official programme and charges before visiting.",
+      "Follow staff instructions around elephants at all times.",
+      "Never approach or touch an elephant without permission.",
+      "Keep children under close supervision.",
+      "Choose responsible activities that prioritize animal welfare.",
+      "Avoid loud noises and sudden movements near animals.",
+      "Wear comfortable footwear suitable for outdoor areas."
+    ],
+    "facilities": [
+      "Parking",
+      "Visitor guidance",
+      "Educational activities",
+      "Meal facilities on request"
+    ],
+    "images": [
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789987153890-73d6a3bc-6722-43d3-a147-421c0f64a5ea.jpg",
+        "altText": "Millennium Elephant Foundation photo 1",
+        "isPrimary": false,
+        "_id": "6ab1095241d15d9a654b793c"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789987153903-47d5768d-eb0a-4e3f-a85f-52e6284f01f0.jpg",
+        "altText": "Millennium Elephant Foundation photo 2",
+        "isPrimary": true,
+        "_id": "6ab1095241d15d9a654b793d"
+      }
+    ],
+    "createdAt": "2026-09-06T16:57:33.225Z",
+    "updatedAt": "2026-09-21T10:39:14.404Z",
+    "__v": 1
+  },
+  {
+    "_id": "6a9d9c49f27d028dfafb1bd5",
+    "name": "Niloluwa Ancient Bridge",
+    "category": "Historical",
+    "description": "Niloluwa Ancient Bridge is a historic steel bridge crossing the Gurugoda Oya in Niloluwa village, Kegalle District. The bridge was manufactured at the Government Factory and constructed during the British colonial period. Its metal structure and riverside setting make it an important example of the region’s historical engineering heritage.",
+    "location": {
+      "name": "Niloluwa, Mabopitiya",
+      "address": "Niloluwa Ancient Bridge, Niloluwa Village, Mabopitiya, Kegalle District, Sri Lanka",
+      "latitude": 7.1511187,
+      "longitude": 80.3707892
+    },
+    "openingHours": {
+      "openingTime": "",
+      "closingTime": "",
+      "note": "No official visitor opening hours are available. Confirm current access and bridge conditions locally."
+    },
+    "distanceFromReferenceKm": 16,
+    "travelInformation": "The bridge is located in Niloluwa village near Mabopitiya and crosses the Gurugoda Oya. Road access and the physical condition of the bridge may change. Visitors should obtain current local directions and avoid entering any restricted or structurally unsafe area.",
+    "travelTips": [
+      "Check the bridge condition before approaching.",
+      "Do not climb on railings or structural sections.",
+      "Keep a safe distance from the river during high water.",
+      "Avoid visiting during flooding or heavy rain.",
+      "Supervise children closely.",
+      "Do not block local traffic or access routes.",
+      "Protect the historical structure from damage."
+    ],
+    "facilities": [],
+    "images": [
+      {
+        "url": "http://localhost:5000/uploads/attractions/1788714056745-1d087add-c8a5-4c67-b2b4-0e1ca8ebc1bf.jpg",
+        "altText": "Niloluwa Ancient Bridge photo 1",
+        "isPrimary": false,
+        "_id": "6a9d9c49f27d028dfafb1bd6"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1790128994926-ff6d1904-d093-4ecd-bf07-8b5440e4861d.jpg",
+        "altText": "Niloluwa Ancient Bridge photo 2",
+        "isPrimary": false,
+        "_id": "6ab33363e45c824978bc6a8f"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1790129535775-aaa105d6-0a0f-4b6d-aaa8-440e25b5325b.jpg",
+        "altText": "Niloluwa Ancient Bridge photo 3",
+        "isPrimary": false,
+        "_id": "6ab3357fe45c824978bc6be2"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1790129535789-81e2717b-fd04-4a58-9ee3-7874638007d2.jpg",
+        "altText": "Niloluwa Ancient Bridge photo 4",
+        "isPrimary": true,
+        "_id": "6ab3357fe45c824978bc6be3"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1790129535798-a547586e-ab69-4198-8152-fab299cb90aa.jpg",
+        "altText": "Niloluwa Ancient Bridge photo 5",
+        "isPrimary": false,
+        "_id": "6ab3357fe45c824978bc6be4"
+      }
+    ],
+    "createdAt": "2026-09-06T17:00:57.134Z",
+    "updatedAt": "2026-09-23T02:12:15.994Z",
+    "__v": 2
+  },
+  {
+    "_id": "6a9e2c635edb72263622bc03",
+    "name": "Dewanagala Rajamaha Viharaya",
+    "category": "Religious",
+    "description": "Dewanagala Rajamaha Viharaya is an ancient Buddhist temple situated on a large rock near Mawanella in the Kegalle District. The site is associated with the Polonnaruwa period and contains religious and historical remains, including inscriptions and evidence of earlier structures. Its elevated setting also provides views of the surrounding landscape.",
+    "location": {
+      "name": "Dewanagala, Mawanella",
+      "address": "Dewanagala Rajamaha Viharaya, Mawanella–Hemmathagama Road, Dewanagala, Kegalle District, Sri Lanka",
+      "latitude": 7.22009,
+      "longitude": 80.46842
+    },
+    "openingHours": {
+      "openingTime": "",
+      "closingTime": "",
+      "note": "Verified public opening hours are currently unavailable. Confirm appropriate visiting times before travelling."
+    },
+    "distanceFromReferenceKm": 7.3,
+    "travelInformation": "The temple is located approximately three miles from Mawanella along the Mawanella–Hemmathagama road. Reaching the elevated temple area may require walking and climbing steps. Visitors should obtain current local directions and check weather conditions before starting the climb.",
+    "travelTips": [
+      "Wear modest clothing suitable for a Buddhist temple.",
+      "Remove footwear where required.",
+      "Maintain silence near worship areas.",
+      "Do not touch inscriptions or historical remains.",
+      "Use comfortable footwear for the climb.",
+      "Carry drinking water but keep the site clean.",
+      "Avoid climbing during heavy rain or thunderstorms.",
+      "Ask permission before photographing religious activities."
+    ],
+    "facilities": [],
+    "images": [
+      {
+        "url": "http://localhost:5000/uploads/attractions/1788750947062-70380905-5777-4294-af8c-877bc6d88523.jpg",
+        "altText": "Dewanagala Rajamaha Viharaya photo 1",
+        "isPrimary": true,
+        "_id": "6a9e2c635edb72263622bc04"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1788750947069-62546b43-0ef0-42a9-b6ba-f0fff8f91041.jpg",
+        "altText": "Dewanagala Rajamaha Viharaya photo 2",
+        "isPrimary": false,
+        "_id": "6a9e2c635edb72263622bc05"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789977685003-38e06106-d26c-43a2-8348-69aa19bd6515.jpg",
+        "altText": "Dewanagala Rajamaha Viharaya photo 3",
+        "isPrimary": false,
+        "_id": "6ab0e455896ad5dac6543627"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789977685004-8742027f-81b7-4572-87be-c30e51267c56.jpg",
+        "altText": "Dewanagala Rajamaha Viharaya photo 4",
+        "isPrimary": false,
+        "_id": "6ab0e455896ad5dac6543628"
+      }
+    ],
+    "createdAt": "2026-09-07T03:15:47.413Z",
+    "updatedAt": "2026-09-21T08:01:25.195Z",
+    "__v": 1
+  },
+  {
+    "_id": "6ab0e165896ad5dac65432a8",
+    "name": "Bathalegala (Bible Rock)",
+    "category": "Nature",
+    "description": "Bathalegala (Bible Rock) is one of the most iconic mountains in the Aranayake area, known for its distinctive rock formation that resembles an open Bible. It is a popular hiking destination offering panoramic views of the surrounding hills, forests, and villages. Visitors can enjoy nature, photography, trekking, and a peaceful atmosphere. A small Buddhist temple located near the summit adds cultural and religious significance to the site, making it attractive to both hikers and pilgrims.",
+    "location": {
+      "name": "Bathalegala, Aranayake",
+      "address": "Aranayake, Kegalle District, Sri Lanka",
+      "latitude": 7.18957,
+      "longitude": 80.43428
+    },
+    "openingHours": {
+      "openingTime": "",
+      "closingTime": "",
+      "isOpen24Hours": true,
+      "note": "This is a natural outdoor attraction without verified official opening hours. Visiting during daylight hours is recommended."
+    },
+    "distanceFromReferenceKm": 4.5,
+    "travelInformation": "Visitors can reach the Bathalegala area through Aranayake and continue towards the local trail access point. The final part of the journey requires hiking, and road or trail conditions may change depending on the weather. The route shown by DayTrace should be used only as approximate planning information. Visitors should confirm current access conditions before travelling.",
+    "travelTips": [
+      "Begin the hike early to avoid strong midday heat.",
+      "Wear comfortable hiking shoes with good grip.",
+      "Carry enough drinking water and light snacks.",
+      "Avoid hiking during heavy rain because the trail may become slippery.",
+      "Check the weather conditions before starting the journey.",
+      "Stay on the recognised trail and avoid unsafe cliff edges.",
+      "Keep the natural environment clean and take all waste back with you.",
+      "Carry a charged mobile phone for communication."
+    ],
+    "facilities": [
+      "Limited parking may be available near the local trail access area.",
+      "Small local shops may be available in nearby villages."
+    ],
+    "images": [
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789976933727-3cf34da4-de85-45e8-bba9-2fc4d0741dff.jpg",
+        "altText": "Bathalegala (Bible Rock) photo 1",
+        "isPrimary": true,
+        "_id": "6ab0e165896ad5dac65432a9"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789976933732-1006c9ba-1277-4803-bc3a-5b2bc699c0e2.jpg",
+        "altText": "Bathalegala (Bible Rock) photo 2",
+        "isPrimary": false,
+        "_id": "6ab0e165896ad5dac65432aa"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789976933745-bb9c8aea-88e4-4991-a889-63ce98f425b6.jpg",
+        "altText": "Bathalegala (Bible Rock) photo 3",
+        "isPrimary": false,
+        "_id": "6ab0e165896ad5dac65432ac"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789976933746-5179b60a-e88d-4b58-a098-d725f3a0f52a.jpg",
+        "altText": "Bathalegala (Bible Rock) photo 4",
+        "isPrimary": false,
+        "_id": "6ab0e165896ad5dac65432ad"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789976933762-de402ab4-ab07-4f29-b826-a89921aab3e0.jpg",
+        "altText": "Bathalegala (Bible Rock) photo 5",
+        "isPrimary": false,
+        "_id": "6ab0e165896ad5dac65432ae"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789976933765-ee7a2cce-2caa-4024-89dd-664f7cdcb63c.jpg",
+        "altText": "Bathalegala (Bible Rock) photo 6",
+        "isPrimary": false,
+        "_id": "6ab0e165896ad5dac65432af"
+      },
+      {
+        "url": "http://localhost:5000/uploads/attractions/1789976933769-8fc8fecb-3274-494a-a2fa-d4ee7e06937b.jpg",
+        "altText": "Bathalegala (Bible Rock) photo 7",
+        "isPrimary": false,
+        "_id": "6ab0e165896ad5dac65432b0"
+      }
+    ],
+    "createdAt": "2026-09-21T07:48:53.858Z",
+    "updatedAt": "2026-10-10T06:23:57.406Z",
+    "__v": 1
+  }
+]

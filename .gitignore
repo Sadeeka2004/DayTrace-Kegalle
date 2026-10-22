@@ -1,0 +1,9 @@
+# Never commit admin data
+database/admins.json
+
+# Extra safety
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
