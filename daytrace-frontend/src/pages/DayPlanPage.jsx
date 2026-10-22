@@ -26,7 +26,7 @@ import dayPlanHeroImage from "../assets/images/bathalegala-trail-placeholder.png
 
 function PlanHero({ attractionCount, onClearPlan }) {
   return (
-    <section className="relative isolate overflow-hidden bg-slate-950 px-5 py-16 text-white sm:px-8 lg:py-24">
+        <section className="relative isolate overflow-hidden bg-slate-950 px-5 pb-16 pt-32 text-white sm:px-8 lg:pb-24 lg:pt-36">
       <img
         src={dayPlanHeroImage}
         alt="Scenic trail representing a one-day journey around Kegalle"

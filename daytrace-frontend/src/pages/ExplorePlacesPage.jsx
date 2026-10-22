@@ -190,7 +190,7 @@ const displayedAttractions = useMemo(() => {
 
   return (
     <main className="min-h-[calc(100vh-72px)] bg-[#f4f8f7]">
-      <section className="relative isolate overflow-hidden bg-slate-950 px-5 py-16 text-white sm:px-8 lg:py-24">
+      <section className="relative isolate overflow-hidden bg-slate-950 px-5 pb-16 pt-32 text-white sm:px-8 lg:pb-24 lg:pt-36">
   <img
     src={exploreHeroImage}
     alt="Scenic landscape representing attractions around Kegalle"

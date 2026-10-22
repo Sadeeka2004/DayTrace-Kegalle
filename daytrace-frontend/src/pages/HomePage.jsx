@@ -24,7 +24,8 @@ function HomePage() {
 
         <div className="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-950/10" />
 
-        <div className="mx-auto flex min-h-[calc(100vh-72px)] max-w-7xl items-center px-5 py-16 sm:px-8 lg:py-24">
+        
+        <div className="mx-auto flex min-h-[calc(100vh-72px)] max-w-7xl items-center px-5 pb-16 pt-32 sm:px-8 lg:pb-24 lg:pt-36">
           <div className="w-full max-w-3xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-teal-100 shadow-lg backdrop-blur-md">
               <MapPin size={17} aria-hidden="true" />

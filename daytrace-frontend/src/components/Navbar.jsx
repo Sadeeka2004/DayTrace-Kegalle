@@ -11,7 +11,7 @@ const navigationLinks = [
   { label: "My Day Plan", path: "/day-plan" },
 ];
 
-function Navbar() {
+function Navbar({ overlay = false }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { planAttractionIds } = useDayPlan();
 
@@ -61,7 +61,11 @@ function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 px-3 py-3 sm:px-5">
+        <header
+      className={`sticky top-0 z-50 px-3 py-3 sm:px-5 ${
+        overlay ? "-mb-[88px]" : ""
+      }`}
+    >
       <nav
         aria-label="Main navigation"
         className="mx-auto flex h-16 max-w-7xl items-center justify-between rounded-2xl border border-white/70 bg-white/80 px-4 shadow-xl shadow-slate-950/10 backdrop-blur-2xl sm:px-5"
